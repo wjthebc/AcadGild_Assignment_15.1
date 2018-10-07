@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--References bootstrap stylesheet-->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!--References loader stylesheet-->
+  <link rel="stylesheet" href="./loader.css">
+</head>
+  <!--Kicks off timeout function onload-->
+  <body onload="myFunction()" style="margin:0;">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <!--Styles header-->
+              <div style="border-radius: 15px; padding: 10px; text-align: center" class="page-header p-3 mb-2 bg-info text-white rounded">
+                  <h1>Arrivals</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div>
+                  <!--Creates ID for JSON data to be inserted-->
+                    <div id="loader"></div>
+                    <!--Creates ID for loader and styles laoder-->
+                    <div style="display:none;" id="myDiv" class="animate-bottom">
+                    <div id = "result"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!--References main JS file-->
+    <script src="./script.js"></script>
+  </body>
+</html>
